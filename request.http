@@ -2,7 +2,7 @@
 GET http://localhost:9000/api/auth/jbetancur HTTP/1.1
 
 ###
-GET http://localhost:9000/api_clientes?accesstoken=eyJhbGciOiJIUzI1NiJ9.amJldGFuY3Vy.7eIqVgwsnN46_jXXw0-sPG2pdnh6PLTZesiH7pTWvSM HTTP/1.1
+GET http://localhost:9000/api/csanchez?accesstoken=eyJhbGciOiJIUzI1NiJ9.amJldGFuY3Vy.7eIqVgwsnN46_jXXw0-sPG2pdnh6PLTZesiH7pTWvSM HTTP/1.1
 
 ###
 GET http://localhost:9000/api_clientes?accesstoken=eyJhbGciOiJIUzI1NiJ9.amJldGFuY3Vy.7eIqVgwsnN46_jXXw0-sPG2pdnh6PLTZesiH7pTWvSM HTTP/1.1
@@ -12,11 +12,24 @@ POST http://localhost:9000/api_clientes?accesstoken=eyJhbGciOiJIUzI1NiJ9.amJldGF
 Content-Type: application/json
 
 {
-        "cedula": 1000757693,
-        "nombre": "Juan Pablo",
-        "apellido": "Betancur",
-        "direccion": "Carrera 48A # 84-34",
+        "cedula": 123456789,
+        "nombre": "Camila",
+        "apellido": "Sanchez Gonzalez",
+        "direccion": "Carrera 54 # 21 - 21",
         "telefono": 2131266
+    
+}
+
+###
+POST http://localhost:9000/api?accesstoken=eyJhbGciOiJIUzI1NiJ9.amJldGFuY3Vy.7eIqVgwsnN46_jXXw0-sPG2pdnh6PLTZesiH7pTWvSM HTTP/1.1
+Content-Type: application/json
+
+{
+        "usuario": "jbetancur",
+        "password": "123456",
+        "nombres": "Juan Pablo",
+        "apellidos": "Betancur Calderon",
+        "correo": "jbetancur@gmail.com"
     
 }
 

@@ -10,12 +10,21 @@ const routes_medicamentos = require('./routes-medicamentos')
 
 const app = express()
 app.set('port',process.env.PORT || 9000)
+/*BD Alterna */
 const dbOptions = {
+    host:'frwahxxknm9kwy6c.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+    user:'w0vhfyjlw8f5txjc',
+    password:'h93bd7o25dtdd472',
+    database:'j3ce1y5xo8y1tdwi'
+}
+/*BD Principal */
+/* const dbOptions = {
     host:'us-cdbr-east-06.cleardb.net',
     user:'be2c22917bae43',
     password:'944e5079',
     database:'heroku_819501358f8d9a6'
-}
+} */
+/*BD Local */
 /* const dbOptions = {
     host:'localhost',
     user:'root',
